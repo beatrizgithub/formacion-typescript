@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Curso Typescript Ejemplo Angular 2</title>
+    </head>
+    <body>
+        <section id="container"></section>
+        <form>  
+            <input type="text" [{ngModel}]="elemento" placeholder="Nombre del programa" />
+            <button (click)="addElement()">Añadir elemento</button>
+        </form>
+        <h4>
+            Listado de programas
+        </h4>
+        <ul>
+            <li *ngFor="let programa of programas">
+                {{programa}}
+            </li>
+        </ul>
+        <script type="text/javascript" src="app.component.js"></script>
+    </body>
+</html> 
